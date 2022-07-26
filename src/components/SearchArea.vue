@@ -17,6 +17,7 @@ export default {
 .search-area {
   background: var(--main-color-3);
   padding: 6px 10px;
+  border-bottom: solid 1px var(--main-color-5);
 }
 .search-bar {
   background: white;

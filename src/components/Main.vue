@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h1>Title</h1>
+  <div class="main">
+    <h1>HTML</h1>
     <material />
     <material />
     <material />
@@ -16,7 +16,11 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.main {
   flex: 1;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
 }
 </style>

@@ -1,21 +1,21 @@
 <template>
-  <div class="container">
+  <div class="sidebar">
     <search-area />
-    <item-list />
+    <language-list />
   </div>
 </template>
 
 <script>
 import SearchArea from "@/components/SearchArea";
-import ItemList from "@/components/ItemList";
+import LanguageList from "@/components/LanguageList";
 export default {
   name: "Sidebar",
-  components: {ItemList, SearchArea}
+  components: {LanguageList, SearchArea}
 }
 </script>
 
 <style scoped>
-.container {
+.sidebar {
   min-width: 330px;
   background: var(--main-color-1);
   border-right: solid 1px var(--main-color-5);
