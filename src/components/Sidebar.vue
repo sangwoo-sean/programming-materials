@@ -17,5 +17,7 @@ export default {
 <style scoped>
 .container {
   min-width: 330px;
+  background: var(--main-color-1);
+  border-right: solid 1px var(--main-color-5);
 }
 </style>
