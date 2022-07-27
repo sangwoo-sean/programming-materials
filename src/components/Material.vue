@@ -21,4 +21,7 @@ export default {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+h4 {
+  margin-bottom: 10px;
+}
 </style>

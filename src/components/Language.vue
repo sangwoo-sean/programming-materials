@@ -21,6 +21,6 @@ export default {
   background: var(--main-color-3);
 }
 span {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 </style>
