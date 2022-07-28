@@ -1,12 +1,22 @@
 <template>
-  <div class="badge">
-    영어
+  <div class="badge" :style="getBadgeColor">
+    {{ badge.name }}
   </div>
 </template>
 
 <script>
 export default {
-  name: "Badge"
+  name: "Badge",
+  props: {
+    badge: {
+      type: Object,
+    },
+  },
+  computed: {
+    getBadgeColor() {
+      return {background: this.badge.color};
+    }
+  },
 }
 </script>
 

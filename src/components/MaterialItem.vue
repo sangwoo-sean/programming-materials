@@ -1,16 +1,18 @@
 <template>
   <div class="material-item">
-    <div class="upvote-count">122</div>
+    <div class="upvote-count">{{ content.upvoteCount }}</div>
     <div class="upvote">
       <img src="@/assets/upvote-icon-filled.svg" alt="i">
     </div>
     <div class="name">
       <a href="#">
-        <h5>생활코딩</h5>
+        <h5>{{ content.name }}</h5>
       </a>
     </div>
     <div class="badges">
-      <Badge v-for="idx in 3" :key="idx"/>
+      <Badge v-for="(badge, idx) in content.badges" :key="idx"
+             :badge="badge"
+      />
     </div>
   </div>
 </template>
@@ -20,7 +22,12 @@ import Badge from "@/components/Badge";
 
 export default {
   name: "MaterialItem",
-  components: {Badge}
+  components: {Badge},
+  props: {
+    content: {
+      type: Object,
+    },
+  },
 }
 </script>
 

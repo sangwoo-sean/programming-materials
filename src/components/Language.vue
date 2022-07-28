@@ -1,13 +1,28 @@
 <template>
-  <div class="item">
-    <img src="@/assets/html.svg" alt="i" width="20">
-    <span>HTML</span>
+  <div class="item" :style="ifActiveBold">
+    <img :src="language.icon" alt="i" width="20">
+    <span>{{ language.name }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Item"
+  name: "Item",
+  props: {
+    language: {
+      type: Object
+    },
+  },
+  computed: {
+    currentLanguageId() {
+      return this.$store.state.currentLanguageId;
+    },
+    ifActiveBold() {
+      if (Number(this.currentLanguageId) === Number(this.language.id))
+        return {fontWeight: 'bold'};
+      return '';
+    }
+  },
 }
 </script>
 

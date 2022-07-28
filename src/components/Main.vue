@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-    <h1>HTML</h1>
-    <material />
-    <material />
-    <material />
+    <h1>{{ currentLanguage.name }}</h1>
+    <material v-for="(material, idx) in currentLanguage.materials" :key="idx"
+              :material="material"
+    />
   </div>
 </template>
 
@@ -11,7 +11,12 @@
 import Material from "@/components/Material";
 export default {
   name: "Main",
-  components: {Material}
+  components: {Material},
+  computed: {
+    currentLanguage() {
+      return this.$store.getters.currentLanguage;
+    }
+  },
 }
 </script>
 
