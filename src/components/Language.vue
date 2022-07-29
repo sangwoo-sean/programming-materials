@@ -1,6 +1,6 @@
 <template>
   <div class="item" :style="ifActiveBold">
-    <img :src="language.icon" alt="i" width="20">
+    <img :src="language.icon" alt="i" width="20" height="20">
     <span>{{ language.name }}</span>
   </div>
 </template>

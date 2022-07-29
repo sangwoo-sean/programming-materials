@@ -5,7 +5,7 @@
       <img src="@/assets/upvote-icon-filled.svg" alt="i">
     </div>
     <div class="name">
-      <a href="#">
+      <a :href="content.link" target="_blank">
         <h5>{{ content.name }}</h5>
       </a>
     </div>
