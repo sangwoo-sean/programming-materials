@@ -16,7 +16,7 @@ export default new Vuex.Store({
   },
   mutations: {
     setCurrentLanguageId(state, id) {
-      state.currentLanguageId = id;
+      state.currentLanguageId = Number(id);
     }
   },
   actions: {
