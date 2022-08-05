@@ -1,10 +1,11 @@
 <template>
   <div class="material">
-    <h4>유튜브(매체이름)</h4>
-    <material-item />
-    <material-item />
-    <material-item />
-    <material-item />
+    <h4>
+      {{ material.name }}
+    </h4>
+    <material-item v-for="(content, idx) in material.contents" :key="idx"
+                   :content="content"
+    />
   </div>
 </template>
 
@@ -12,7 +13,12 @@
 import MaterialItem from "@/components/MaterialItem";
 export default {
   name: "Material",
-  components: {MaterialItem}
+  components: {MaterialItem},
+  props: {
+    material: {
+      type: Object,
+    },
+  },
 }
 </script>
 
