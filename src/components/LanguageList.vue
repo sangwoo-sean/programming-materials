@@ -15,7 +15,13 @@ export default {
   components: {Language},
   computed: {
     languages() {
-      return this.$store.state.languages;
+      const query = this.$store.state.query.toLowerCase();
+      const languages = this.$store.state.languages;
+
+      if (query.trim().length === 0)
+        return this.$store.state.languages;
+
+      return languages.filter(lang => lang.name.toLowerCase().includes(query));
     }
   },
   methods: {
