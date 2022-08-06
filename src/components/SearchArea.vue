@@ -2,14 +2,24 @@
   <div class="search-area">
     <div class="search-bar">
       <img src="@/assets/search-icon.svg" alt="i">
-      <input type="text" placeholder="검색어를 입력하세요">
+      <input type="text" placeholder="검색어를 입력하세요" v-model="query" @keyup="showLanguages">
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SearchArea"
+  name: "SearchArea",
+  data() {
+    return {
+      query: ''
+    }
+  },
+  methods: {
+    showLanguages() {
+      this.$store.commit('setQuery', this.query);
+    }
+  },
 }
 </script>
 

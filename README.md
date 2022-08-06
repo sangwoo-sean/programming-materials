@@ -1,24 +1,7 @@
 # programming-materials
 
-## Project setup
-```
-npm install
-```
+개발 공부를 하면서, 겪은 다양한 매체들의 컨텐츠들을 모아놓은 곳입니다.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+각 언어별로 볼 수 있도록 정리해두었습니다.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue를 연습하면서 만들었습니다.

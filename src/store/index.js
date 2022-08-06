@@ -7,7 +7,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     languages,
-    currentLanguageId: 1
+    currentLanguageId: 1,
+    query: ''
   },
   getters: {
     currentLanguage(state) {
@@ -17,6 +18,9 @@ export default new Vuex.Store({
   mutations: {
     setCurrentLanguageId(state, id) {
       state.currentLanguageId = Number(id);
+    },
+    setQuery(state, query) {
+      state.query = query;
     }
   },
   actions: {
