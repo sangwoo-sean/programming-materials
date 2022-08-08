@@ -6,7 +6,10 @@
     "serve": "vue-cli-service serve --port 3000",
     "build": "vue-cli-service build --port 3000",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "clean": "gh-pages-clean"
   },
   "dependencies": {
     "core-js": "^3.8.3",
