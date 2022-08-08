@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "Item",
+  name: "Language",
   props: {
     language: {
       type: Object

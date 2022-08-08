@@ -276,4 +276,52 @@ export default [
             }
         ]
     },
+    {
+        id: 8,
+        name: 'OOP',
+        icon: require('@/assets/oop.svg'),
+        materials: [
+            {
+                name: '도서',
+                contents: [
+                    {
+                        name: '클린코드',
+                        upvoteCount: 0,
+                        link: 'http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966260959',
+                        badges: []
+                    },
+                    {
+                        name: '객체지향의 사실과 오해 - 조영호',
+                        upvoteCount: 0,
+                        link: 'http://www.yes24.com/Product/Goods/18249021',
+                        badges: []
+                    },
+                    {
+                        name: '오브젝트 - 조영호',
+                        upvoteCount: 0,
+                        link: 'http://www.yes24.com/Product/Goods/74219491',
+                        badges: []
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: 'Refactoring',
+        icon: require('@/assets/refactoring.svg'),
+        materials: [
+            {
+                name: '유튜브',
+                contents: [
+                    {
+                        name: '백명석 - 클린코더스 강좌',
+                        upvoteCount: 0,
+                        link: 'https://www.youtube.com/playlist?list=PLeQ0NTYUDTmMM71Jn1scbEYdLFHz5ZqFA',
+                        badges: []
+                    },
+                ]
+            }
+        ]
+    },
 ]
